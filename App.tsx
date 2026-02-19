@@ -41,12 +41,13 @@ const App: React.FC = () => {
     });
   }, [filters]);
 
-  // 추천 레시피 추출 (현재 보고 있는 것 제외 최대 4개)
+  // 추천 레시피 추출 (현재 보고 있는 것 제외 최대 5개)
   const relatedRecipes = useMemo(() => {
     if (!viewState.selectedRecipe) return [];
+    // 목데이터가 부족할 수 있으므로 순환참조 방지하며 필터링
     return RECIPES
       .filter(r => r.id !== viewState.selectedRecipe?.id)
-      .slice(0, 4);
+      .slice(0, 5);
   }, [viewState.selectedRecipe]);
 
   // View rendering logic

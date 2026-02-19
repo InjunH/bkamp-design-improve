@@ -21,20 +21,8 @@ export const RECIPES: Recipe[] = [
       { id: 3, title: 'Claude Code에 서버 등록', content: '작성한 서버를 Claude Code 설정 파일에 등록하여 실제 대화창에서 연동되는지 확인합니다.' }
     ],
     commentsList: [
-      {
-        id: 'c1',
-        author: { name: '테오분석', avatar: 'https://picsum.photos/seed/11/32/32' },
-        text: '드디어 MCP 서버 구축 가이드가 올라왔네요! 정말 유용합니다. 특히 PostgreSQL 연동 부분이 깔끔해서 따라하기 좋았어요.',
-        createdAt: '1시간 전',
-        likes: 12
-      },
-      {
-        id: 'c2',
-        author: { name: 'DataWizard', avatar: 'https://picsum.photos/seed/12/32/32' },
-        text: 'SDK 버전이 업데이트되면서 약간 바뀐 부분이 있던데, 그 부분도 나중에 업데이트해주시면 좋을 것 같습니다!',
-        createdAt: '30분 전',
-        likes: 5
-      }
+      { id: 'c1', author: { name: '테오분석', avatar: 'https://picsum.photos/seed/11/32/32' }, text: '드디어 MCP 서버 구축 가이드가 올라왔네요! 정말 유용합니다.', createdAt: '1시간 전', likes: 12 },
+      { id: 'c2', author: { name: 'DataWizard', avatar: 'https://picsum.photos/seed/12/32/32' }, text: 'SDK 버전 업데이트 부분도 체크 부탁드려요!', createdAt: '30분 전', likes: 5 }
     ]
   },
   {
@@ -50,6 +38,48 @@ export const RECIPES: Recipe[] = [
     bookmarks: 42,
     gradientClass: 'gradient-blue',
     createdAt: '2024-03-19',
+  },
+  {
+    id: '3',
+    category: '디자인',
+    difficulty: '입문',
+    title: 'Midjourney v7으로 상업용 아이콘 세트 제작하기',
+    description: '일관성 있는 스타일로 수백 개의 아이콘을 한 번에 생성하는 프롬프트 엔지니어링 기법입니다.',
+    author: { name: '디자인레시피', avatar: 'https://picsum.photos/seed/3/40/40' },
+    views: 2100,
+    comments: 5,
+    likes: 420,
+    bookmarks: 120,
+    gradientClass: 'gradient-orange',
+    createdAt: '2024-03-18',
+  },
+  {
+    id: '4',
+    category: '기획',
+    difficulty: '고급',
+    title: 'Notion AI를 활용한 비즈니스 모델 캔버스 자동화',
+    description: '아이디어 한 줄로 시장 분석부터 수익 구조까지 초안을 잡는 워크플로우를 소개합니다.',
+    author: { name: '기획왕툴', avatar: 'https://picsum.photos/seed/4/40/40' },
+    views: 1540,
+    comments: 3,
+    likes: 230,
+    bookmarks: 95,
+    gradientClass: 'gradient-blue',
+    createdAt: '2024-03-17',
+  },
+  {
+    id: '5',
+    category: '개발',
+    difficulty: '중급',
+    title: 'FastAPI와 Gemini API를 활용한 맞춤형 챗봇 서버',
+    description: 'Python 기반의 고성능 서버 구축부터 스트리밍 응답 처리까지 단계별 가이드입니다.',
+    author: { name: '코드마스터', avatar: 'https://picsum.photos/seed/5/40/40' },
+    views: 3200,
+    comments: 8,
+    likes: 560,
+    bookmarks: 180,
+    gradientClass: 'gradient-orange',
+    createdAt: '2024-03-16',
   }
 ];
 
